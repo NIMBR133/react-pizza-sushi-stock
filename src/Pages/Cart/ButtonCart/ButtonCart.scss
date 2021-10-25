@@ -1,0 +1,49 @@
+.btn-cart {
+    display: block;
+    margin: 0 auto;
+    margin-top: 16px;
+    padding: 10px 20px;
+    border-radius: 10px;
+    background: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: all 0.4s;
+    max-width: 300px;
+    &_back {
+        border: 1px solid gray;
+        color: gray;
+        &:hover {
+            background: gray;
+            color: #fff;
+        }
+    }
+    &_pay {
+        border: 1px solid #f0aa13;
+        &:hover {
+            background: #f0aa13;
+            color: #fff;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .btn-cart {
+        padding: 8px 12px;
+        font-size: 16px;
+        &_back {
+            border: 1px solid gray;
+            color: gray;
+            &:hover {
+                background: gray;
+                color: #fff;
+            }
+        }
+        &_pay {
+            border: 1px solid #f0aa13;
+            &:hover {
+                background: #f0aa13;
+                color: #fff;
+            }
+        }
+    }
+}

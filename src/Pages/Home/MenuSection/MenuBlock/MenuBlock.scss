@@ -1,0 +1,55 @@
+.menu-section {
+    padding-top: 30px;
+    &__items {
+        padding-top: 20px;
+    }
+    &__cards {
+        margin-top: 20px;
+        display: flex;
+        align-items: stretch;
+        flex-wrap: wrap;
+        gap: 26px;
+    }
+}
+
+.filter {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+}
+
+
+@media (max-width: 1300px) {
+    .menu-section {
+        &__cards {
+            gap: 40px;
+        }
+    }
+}
+
+@media (max-width: 991px) {
+    .menu-section {
+        &__cards {
+            gap: 16px;
+        }
+    }
+}
+
+@media (max-width: 767px) {
+    .menu-section {
+        &__cards {
+            justify-content: space-evenly;
+        }
+    }
+}
+
+@media (max-width: 575px) {
+    .filter {
+        display: block;
+    }
+    .menu-section {
+        &__items {
+            padding-top: 0;
+        }
+    }
+}

@@ -1,0 +1,40 @@
+.humburger {
+    display: none;
+    position: absolute;
+    z-index: 101;
+    top: 22px;
+    right: 15px;
+    width: 24px;
+    height: 20px;
+    cursor: pointer;
+    span {
+        display: block;
+        width: 24px;
+        height: 2px;
+        background: gray;
+        margin-top: 6px;
+        transition: all 0.4s;
+        &:nth-child(1) {
+            margin-top: 0;
+        }
+    }
+    &_active {
+        span:nth-child(1) {
+            margin-top: 10px;
+            transform: rotate(45deg);
+        }
+        span:nth-child(2) {
+            display: none;
+        }
+        span:nth-child(3) {
+            transform: rotate(-45deg);
+            margin-top: -3px;
+        }
+    }
+}
+
+@media (max-width: 776px) {
+    .humburger {
+        display: block;
+    }
+}
