@@ -7,7 +7,7 @@ const MenuCard = ({ item, sizeProduct, addToCart, countAdded }) => {
     const clickSize = (i) => {
         setSize(i)
     }
-console.log('render')
+    
     const { price, weight } = Array.isArray(item.price)
         ? { price: item.price[size], weight: item.weight ? item.weight[size] : null }
         : { price: item.price, weight: item.weight ? item.weight : null }

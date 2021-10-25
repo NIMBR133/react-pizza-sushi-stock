@@ -9,7 +9,7 @@ const initialState = {
 }
 
 const products = (state = initialState, action) => {
-    switch (action.type) {
+    switch (action.type) { 
         case 'SET_PRODUCTS':
             return {
                 ...state,
@@ -18,7 +18,7 @@ const products = (state = initialState, action) => {
         case 'SET_LOADING':
             return {
                 ...state,
-                isLoading: !state.isLoading
+                isLoading: action.payload
             }
         default:
             return state

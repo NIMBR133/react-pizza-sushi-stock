@@ -2,7 +2,7 @@ import React, { useMemo } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { setProductCart } from '../../../../redux/actions/cart';
-import { fetchProducts, setLoading } from '../../../../redux/actions/products';
+import { fetchProducts } from '../../../../redux/actions/products';
 
 import MenuCard from '../MenuCard/MenuCard';
 import Loading from './../../../../Components/Loading/Loading';

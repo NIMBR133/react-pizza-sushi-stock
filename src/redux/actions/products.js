@@ -5,15 +5,16 @@ export const setProducts = (items, product) => ({
     payload: {items, product}
 })
 
-export const setLoading = () => ({
-    type: 'SET_LOADING'
+export const setLoading = (boolean) => ({
+    type: 'SET_LOADING',
+    payload: boolean
 })
 
 export const fetchProducts = (product) => {
     return (dispatch) => {
-        dispatch(setLoading())
-        axios.get(`http://localhost:3001/${product}`)
+        dispatch(setLoading(true))
+        axios.get(`/${product}`)
             .then(response => dispatch(setProducts(response.data, product)))
-            .then(() => dispatch(setLoading()))
+            .then(() => dispatch(setLoading(false)))
     }
 }
