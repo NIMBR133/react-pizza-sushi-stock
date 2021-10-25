@@ -1,10 +1,8 @@
 .cart {
     margin-top: 20px;
-
     &__title {
         font-size: 26px;
     }
-
     &-total {
         display: flex;
         justify-content: space-between;
@@ -13,7 +11,6 @@
         padding: 30px 20px;
         background: rgb(231, 231, 231);
         border-radius: 10px;
-
         &__sum {
             font-size: 18px;
 
@@ -22,20 +19,17 @@
                 font-weight: 600;
             }
         }
-
         &__col {
             display: flex;
             flex-direction: column;
             align-items: center;
         }
-
         &__delete {
             color: gray;
             font-size: 16px;
             display: flex;
             align-items: flex-end;
             cursor: pointer;
-
             svg {
                 width: 20px;
                 height: 20px;
@@ -45,7 +39,6 @@
                     fill: gray;
                 }
             }
-
             &_disabled {
                 color: rgb(163, 163, 163);
                 pointer-events: none;
@@ -56,7 +49,6 @@
             }
         }
     }
-
     &__empty {
         text-align: center;
         margin-top: 50px;
@@ -74,11 +66,11 @@
         }
         &-total {
             margin-top: 20px;
-            padding: 20px 4px;
+            padding: 20px 2px;
             &__sum {
                 font-size: 16px;
                 span {
-                    font-size: 18px;
+                    font-size: 20px;
                 }
             }
             &__delete {
