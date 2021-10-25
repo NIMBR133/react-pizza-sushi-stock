@@ -1,5 +1,5 @@
 {
-  "name": "todo",
+  "name": "pizza-rolls",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -10,7 +10,6 @@
     "json-server": "^0.17.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
-    "react-content-loader": "^6.0.3",
     "react-dom": "^17.0.2",
     "react-redux": "^7.2.5",
     "react-router-dom": "^5.3.0",
