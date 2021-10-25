@@ -25,13 +25,13 @@ const CartTotal = ({ totalCount, totalPrice, onClickClearCart }) => {
                     </svg>
                     Очистить корзину
                 </div>
-                <ButtonCart classes={'btn-cart_back'}>⮪ Вернуться назад</ButtonCart>
+                <ButtonCart classes={'btn-cart_back'}>&#11178; Вернуться назад</ButtonCart>
             </div>
             <div className="cart-total__col">
                 <div className="cart-total__sum">
                     Сумма заказа: <span>{totalPrice} ₽</span>
                 </div>
-                <ButtonCart classes={'btn-cart_pay'}>Оплатить сейчас ⮫</ButtonCart>
+                <ButtonCart classes={'btn-cart_pay'}>Оплатить сейчас &#10150;</ButtonCart>
             </div>
         </div>
     )

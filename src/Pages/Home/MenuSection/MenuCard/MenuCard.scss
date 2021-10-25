@@ -169,3 +169,24 @@
         }
     }
 }
+
+@media (max-width: 630px) {
+    .card {
+        width: calc(100% - 10px);
+        max-width: 380px;
+        &__title {
+            font-size: 24px;
+        }
+    }
+    .size-list {
+        &__item {
+            padding: 10px 0;
+        }
+    }
+    &__price {
+        font-size: 22px;
+    }
+    &__weight {
+        font-size: 14px;
+    }
+}

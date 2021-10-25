@@ -60,7 +60,7 @@ const Cart = () => {
                         : <div className='cart__empty'>
                             <img src={cartEmty} alt="" />
                             <h2>Пока пусто! Добавьте что-нибудь из нашего меню 😋</h2>
-                            <ButtonCart classes={'btn-cart_back'}>⮪ Вернуться в меню</ButtonCart>
+                            <ButtonCart classes={'btn-cart_back'}>&#11178; Вернуться в меню</ButtonCart>
                         </div>
                 }
             </div>
